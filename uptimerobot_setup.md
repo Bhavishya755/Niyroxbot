@@ -1,90 +1,103 @@
-# UptimeRobot Setup Guide for Replit Development Environment
+# UptimeRobot Setup Guide for Telegram Bot
 
-## Your Current Setup Status
-✅ Bot is running and responding to commands
-✅ Health server active on port 5000 
-✅ Keep-alive endpoints working properly
+## Overview
+This guide will help you set up UptimeRobot monitoring to keep your Telegram bot running 24/7 on Replit.
 
-## Getting Your Replit URL
+## Prerequisites
+- Your Telegram bot is running with the Flask keep-alive server
+- You have access to your Replit project URL
 
-### Option 1: Use Replit's Built-in URL (Recommended)
-1. Look at your Replit's web view panel
-2. Your URL will be something like: `https://46b8a09e-bff5-4893-852b-5944a5b0cf27-00-19d3zbcqmgxy4.kirk.repl.co`
-3. This is your bot's URL - it's already available!
+## Step 1: Get Your Bot's URL
 
-### Option 2: Share Your Replit Publicly
-1. Click the **"Share"** button in the top right
-2. Toggle **"Publish to Community Gallery"** ON
-3. This will give you a cleaner URL like: `https://your-repl-name.your-username.repl.co`
-
-## UptimeRobot Configuration
-
-### Step 1: Create UptimeRobot Account
-1. Go to [uptimerobot.com](https://uptimerobot.com)
-2. Sign up for free account
-3. Verify your email
-
-### Step 2: Add Bot Monitor
-1. Click **"+ Add New Monitor"**
-2. **Monitor Type**: `HTTP(s)`
-3. **Friendly Name**: `Telegram Bot Keep-Alive`
-4. **URL**: `https://your-repl-url/health`
-   - Use the URL from your Replit webview
-   - Add `/health` at the end
-5. **Monitoring Interval**: `5 minutes`
-6. **Monitor Timeout**: `30 seconds`
-7. **HTTP Method**: `GET`
-8. Click **"Create Monitor"**
-
-### Step 3: Verify Setup
-1. Check that UptimeRobot shows your monitor as "Up" (green)
-2. You should see successful pings every 5 minutes
-3. Your bot will stay active due to regular HTTP requests
-
-## Your Health Endpoint Response
-When UptimeRobot pings your `/health` endpoint, it will receive:
-```json
-{
-  "status": "healthy",
-  "bot_status": "running",
-  "uptime": "0h 15m",
-  "timestamp": "2025-07-10T23:05:17.216878",
-  "check_count": 3
-}
+Your bot is currently running at:
+```
+https://bf1cd8be-20c8-4f99-8083-7e7cba4cb776-00-13j3n5uexl3dy.riker.replit.dev
 ```
 
-## Finding Your Replit URL
+Health check endpoint:
+```
+https://bf1cd8be-20c8-4f99-8083-7e7cba4cb776-00-13j3n5uexl3dy.riker.replit.dev/health
+```
 
-### Method 1: From Webview
-- Look at the URL bar in your Replit's webview
-- Copy the full URL (it's quite long but works perfectly)
+## Step 2: Create UptimeRobot Account
 
-### Method 2: From Console
-- Look for any network requests in your console logs
-- The base URL will be shown there
+1. Go to [https://uptimerobot.com](https://uptimerobot.com)
+2. Click "Sign Up" and create a free account
+3. Verify your email address
+4. Log in to your dashboard
 
-### Method 3: Environment Variable
-- Your Replit automatically sets the `REPLIT_DOMAIN` environment variable
-- Use: `https://${REPLIT_DOMAIN}`
+## Step 3: Add New Monitor
+
+1. In your UptimeRobot dashboard, click "Add New Monitor"
+2. Configure the monitor with these settings:
+
+   **Monitor Type:** HTTP(s)
+   **Friendly Name:** Telegram Bot Keep-Alive
+   **URL:** `https://bf1cd8be-20c8-4f99-8083-7e7cba4cb776-00-13j3n5uexl3dy.riker.replit.dev/health`
+   **Monitoring Interval:** 5 minutes
+   **HTTP Method:** GET
+   **Expected HTTP Status Code:** 200
+
+3. Click "Create Monitor"
+
+## Step 4: Configure Notifications (Optional)
+
+1. Go to "My Settings" → "Alert Contacts"
+2. Add your email address or phone number
+3. Configure when you want to be notified (e.g., when the bot goes down)
+
+## Step 5: Test Your Setup
+
+1. Wait a few minutes for the first ping
+2. Check that the monitor shows "Up" status
+3. Your bot should now stay alive 24/7!
 
 ## How It Works
-1. **UptimeRobot** sends HTTP GET request to your `/health` endpoint every 5 minutes
-2. **Your health server** responds with bot status and uptime data
-3. **Replit** sees the regular traffic and keeps your app active
-4. **Your bot** continues running 24/7 without hibernation
 
-## Important Notes
-- Your bot is already configured and ready for UptimeRobot
-- The health endpoint is working perfectly
-- You just need to find your Replit URL and add it to UptimeRobot
-- Free UptimeRobot accounts get 50 monitors and 5-minute intervals
-- This setup will significantly reduce hibernation on Replit's free tier
+- UptimeRobot pings your bot's `/health` endpoint every 5 minutes
+- This prevents Replit from putting your project to sleep
+- If your bot goes down, UptimeRobot will notify you
+- The Flask server runs alongside your Telegram bot, providing the web interface
+
+## Available Endpoints
+
+Your bot provides these endpoints:
+
+1. **Main Status Page:** `/`
+   - Shows a nice HTML page with bot status
+   - Good for checking if everything is working
+
+2. **Health Check:** `/health`
+   - JSON response with bot status
+   - Used by UptimeRobot for monitoring
+
+3. **Bot Statistics:** `/stats`
+   - JSON response with bot features and info
+   - Useful for debugging
 
 ## Troubleshooting
-If UptimeRobot shows "Down":
-1. Check your Replit console for errors
-2. Verify the health endpoint returns HTTP 200
-3. Make sure the URL is correct with `/health` at the end
-4. Test the URL directly in your browser first
 
-Your bot is ready for 24/7 operation with UptimeRobot monitoring!
+### Monitor Shows "Down"
+- Check that your Replit project is running
+- Verify the URL is correct
+- Make sure the Flask server is running on port 8080
+
+### Bot Not Responding to Messages
+- Check the bot token in your environment variables
+- Look at the bot logs in the Replit console
+- Verify the bot is properly started alongside Flask
+
+### Can't Access the URLs
+- Make sure your Replit project is public or properly configured
+- Check that the Flask server is bound to `0.0.0.0:8080`
+- Verify no firewall is blocking the ports
+
+## Current Status
+
+✅ Bot is running successfully
+✅ Flask keep-alive server is active
+✅ Health endpoint is responding correctly
+✅ Bot token is properly configured
+✅ All endpoints are accessible
+
+Your bot is now ready for 24/7 operation with UptimeRobot monitoring!

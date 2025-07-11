@@ -1857,3 +1857,127 @@
 2025-07-10 23:15:39,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4/getUpdates "HTTP/1.1 200 OK"
 2025-07-10 23:15:49,589 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4/getUpdates "HTTP/1.1 200 OK"
 2025-07-10 23:15:59,730 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:27:01,836 - __main__ - INFO - 🚀 Starting Telegram Bot with Flask Keep-Alive...
+2025-07-11 07:27:01,837 - __main__ - INFO - 🌐 Starting Flask keep-alive server on port 8080...
+2025-07-11 07:27:01,837 - __main__ - INFO - ✅ Flask keep-alive server started
+2025-07-11 07:27:01,837 - __main__ - INFO - 🚀 Starting Telegram bot...
+2025-07-11 07:27:01,866 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.128.181:8080
+2025-07-11 07:27:01,867 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 07:27:01,868 - main - INFO - 🚀 Bot is starting...
+2025-07-11 07:27:04,002 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4/getMe "HTTP/1.1 401 Unauthorized"
+2025-07-11 07:27:04,004 - main - ERROR - ❌ Failed to start bot: The token `7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4` was rejected by the server.
+2025-07-11 07:27:04,005 - __main__ - ERROR - ❌ Error running bot: a coroutine was expected, got None
+2025-07-11 07:27:33,936 - __main__ - INFO - 🚀 Starting Telegram Bot with Flask Keep-Alive...
+2025-07-11 07:27:33,937 - __main__ - INFO - 🌐 Starting Flask keep-alive server on port 8080...
+2025-07-11 07:27:33,937 - __main__ - INFO - ✅ Flask keep-alive server started
+2025-07-11 07:27:33,937 - __main__ - INFO - 🚀 Starting Telegram bot...
+2025-07-11 07:27:33,977 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.128.181:8080
+2025-07-11 07:27:33,977 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 07:27:33,985 - main - INFO - 🚀 Bot is starting...
+2025-07-11 07:27:34,367 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4/getMe "HTTP/1.1 401 Unauthorized"
+2025-07-11 07:27:34,379 - main - ERROR - ❌ Failed to start bot: The token `7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4` was rejected by the server.
+2025-07-11 07:27:53,221 - __main__ - INFO - 🚀 Starting Telegram Bot with Flask Keep-Alive...
+2025-07-11 07:27:53,222 - __main__ - INFO - 🌐 Starting Flask keep-alive server on port 8080...
+2025-07-11 07:27:53,222 - __main__ - INFO - ✅ Flask keep-alive server started
+2025-07-11 07:27:53,223 - __main__ - INFO - 🚀 Starting Telegram bot...
+2025-07-11 07:27:53,251 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.128.181:8080
+2025-07-11 07:27:53,252 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 07:27:53,257 - main - INFO - 🚀 Bot is starting...
+2025-07-11 07:27:53,633 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getMe "HTTP/1.1 200 OK"
+2025-07-11 07:27:53,750 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-11 07:27:53,751 - telegram.ext.Application - INFO - Application started
+2025-07-11 07:28:00,942 - flask_keepalive_bot - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/flask_keepalive_bot.py", line 65, in health
+    "timestamp": str(asyncio.get_event_loop().time()) if asyncio.get_event_loop().is_running() else "No event loop"
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/events.py", line 681, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-2 (process_request_thread)'.
+2025-07-11 07:28:00,952 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:28:00] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-07-11 07:28:01,210 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:28:01] "GET /stats HTTP/1.1" 200 -
+2025-07-11 07:28:01,397 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:28:01] "GET / HTTP/1.1" 200 -
+2025-07-11 07:28:04,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:28:10,376 - flask_keepalive_bot - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/flask_keepalive_bot.py", line 65, in health
+    "message": "Bot is running",
+                                 
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/events.py", line 681, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-5 (process_request_thread)'.
+2025-07-11 07:28:10,379 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:28:10] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-07-11 07:28:14,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:28:20,877 - __main__ - INFO - 🚀 Starting Telegram Bot with Flask Keep-Alive...
+2025-07-11 07:28:20,880 - __main__ - INFO - 🌐 Starting Flask keep-alive server on port 8080...
+2025-07-11 07:28:20,880 - __main__ - INFO - ✅ Flask keep-alive server started
+2025-07-11 07:28:20,881 - __main__ - INFO - 🚀 Starting Telegram bot...
+2025-07-11 07:28:20,915 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.128.181:8080
+2025-07-11 07:28:20,915 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 07:28:20,931 - main - INFO - 🚀 Bot is starting...
+2025-07-11 07:28:21,292 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getMe "HTTP/1.1 200 OK"
+2025-07-11 07:28:21,412 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-11 07:28:21,415 - telegram.ext.Application - INFO - Application started
+2025-07-11 07:28:25,671 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:28:25] "GET /health HTTP/1.1" 200 -
+2025-07-11 07:28:25,930 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:28:25] "GET /stats HTTP/1.1" 200 -
+2025-07-11 07:28:31,759 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:28:41,879 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:28:51,996 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:29:02,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:29:12,226 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:29:15,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 200 OK"
+2025-07-11 07:29:15,548 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-07-11 07:29:15,549 - telegram.ext.Application - INFO - Application.stop() complete
+2025-07-11 07:29:16,749 - __main__ - INFO - 🚀 Starting Telegram Bot with Flask Keep-Alive...
+2025-07-11 07:29:16,750 - __main__ - INFO - 🌐 Starting Flask keep-alive server on port 8080...
+2025-07-11 07:29:16,750 - __main__ - INFO - ✅ Flask keep-alive server started
+2025-07-11 07:29:16,751 - __main__ - INFO - 🚀 Starting Telegram bot...
+2025-07-11 07:29:16,807 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.128.181:8080
+2025-07-11 07:29:16,807 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 07:29:16,817 - main - INFO - 🚀 Bot is starting...
+2025-07-11 07:29:17,187 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getMe "HTTP/1.1 200 OK"
+2025-07-11 07:29:17,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/deleteWebhook "HTTP/1.1 200 OK"
+2025-07-11 07:29:17,380 - telegram.ext.Application - INFO - Application started
+2025-07-11 07:29:17,995 - werkzeug - INFO - 127.0.0.1 - - [11/Jul/2025 07:29:17] "GET / HTTP/1.1" 200 -
+2025-07-11 07:29:21,863 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M/getUpdates "HTTP/1.1 409 Conflict"
+2025-07-11 07:29:21,864 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-07-11 07:29:21,864 - handlers.general - ERROR - Update None caused error Conflict: terminated by other getUpdates request; make sure that only one bot instance is running

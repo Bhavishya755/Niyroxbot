@@ -6,7 +6,7 @@ Contains bot settings, commands, and constants
 import os
 
 # Bot Token - Get from environment or use the provided token
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7749307110:AAHohAq2WqBWdBXN2RjtQ55VY2BEbzsNUo4")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7749307110:AAHKbq49H-1pEtSN9hnvaAhvt2sz3d8vM8M")
 
 # Bot Information
 BOT_NAME = "🤖 Nyrox Bot"
